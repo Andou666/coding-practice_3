@@ -1,5 +1,5 @@
 {
-$(function () {
+$(document).ajaxStop(function () {
 
     //ページ内スクロール
     $('a[href^="#"]').on('click', function () {
