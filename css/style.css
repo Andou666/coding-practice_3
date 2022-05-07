@@ -26,6 +26,7 @@ body {
   color: var(--text-color);
   background-color: var(--bg-color);
   font-feature-settings: "palt";
+  scroll-behavior: smooth;
 }
 
 img {
