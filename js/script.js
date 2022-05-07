@@ -2,6 +2,7 @@ $(function () {
 
     //ページ内スクロール
     $('a[href^="#"]').on('click', function () {
+      console.log("click");
       const speed = 300;
       const href = $(this).attr("href");
       const target = $(href == "#" || href == "" ? 'html' : href);
@@ -9,6 +10,7 @@ $(function () {
       $("html, body").animate({
         scrollTop: position
       }, speed, "swing");
+      console.log(target);
       return false;
     });
 
