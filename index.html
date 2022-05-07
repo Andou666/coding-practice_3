@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex">
+
+  <!-- OGP設定 -->
+  <meta property='og:type' content='website'>
+  <meta property='og:title' content='WDC'>
+  <meta property='og:url' content=''>
+  <!--
+  <meta property='og:description'
+    content='Web Design Conference（WDC）は、最新のWebデザインのトレンドやワーキングスタイルを紹介するイベントを開催。お気軽にご参加ください。'>
+  -->
+  <meta property='og:description' content="無料コーディング練習所 セミナーサイト練習用">
+  <meta property="og:image" content="">
+  <!-- /OGP設定 -->
+  
+  <!--
+  <meta name="description" content="Web Design Conference（WDC）は、最新のWebデザインのトレンドやワーキングスタイルを紹介するイベントを開催。お気軽にご参加ください。" />
+  -->
+  <meta name="description" content="無料コーディング練習所 セミナーサイト練習用">
+  <title>WDC</title>
+
+  <!-- Webフォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+JP:wght@500;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <!-- /Webフォント -->
+  
+  <link href="css/destyle.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  
+  <!-- ファビコン -->
+  <link rel="icon" type="image/png" href="img/icon/icon-192x192.png">
+  <link rel="apple-touch-icon" type="image/png" href="img/icon/apple-touch-icon-180x180.png">
+  <link rel="icon" href="img/icon/favicon.ico">
+  <!-- /ファビコン -->
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <!-- header -->
+    <header id="header" class="header"></header>
+    <!-- /header -->
+
+    <!-- mv -->
+    <div id="mv" class="mv"></div>
+    <!-- /mv -->
+    
+    <main class="content">
+
+      <!-- about -->
+      <section id="about" class="about section"></section>
+      <!-- /about -->
+
+      <!-- speaker -->
+      <section id="speaker" class="speaker section"></section>
+      <!-- /speaker -->
+      
+      <!-- session -->
+      <section id="session" class="session section"></section>
+      <!-- /session -->
+
+      <!-- registor -->
+      <section id="registor" class="registor section">
+        <div class="container">
+          <div class="section__heading">
+            <h2 class="heading01">registor<span class="heading01__subtitle">お申し込み</span></h2>
+          </div>
+          <div class="registor__body">
+            <div class="registor__form">
+
+              <form class="form">
+
+                <div class="form__item">
+                  <div class="form__title">ご職業<span class="form__require">*必須</span></div>
+                  <span class="form__radio">
+                    <input type="radio" id="type01" name="type" value="会社員" checked><label
+                      for="type01">会社員</label></span>
+                  <span class="form__radio"><input type="radio" id="type02" name="type" value="個人事業主"><label
+                      for="type02">個人事業主</label></span>
+                  <span class="form__radio"><input type="radio" id="type03" name="type" value="求職中"><label
+                      for="type03">求職中</label></span>
+                  <span class="form__radio"><input type="radio" id="type04" name="type" value="その他"><label
+                      for="type04">その他</label></span>
+                </div>
+
+                <div class="form__item">
+                  <label for="name" class="form__title">お名前<span class="form__require">*必須</span></label>
+                  <input type="text" id="name" name="name" required class="form__input">
+                </div>
+
+                <div class="form__item">
+                  <label for="email" class="form__title">メールアドレス<span class="form__require">*必須</span></label>
+                  <input type="email" id="email" name="email" required class="form__input">
+                </div>
+
+                <div class="form__item">
+                  <label for="tel" class="form__title">電話番号<span class="form__note">（半角数字ハイフンなし）</span></label>
+                  <input type="tel" id="tel" name="tel" class="form__input">
+                </div>
+
+                <div class="form__item">
+                  <label for="comment" class="form__title">スピーカーに質問したいこと</label>
+                  <textarea id="comment" name="comment" placeholder="ご自由にお書きください" class="form__textarea"></textarea>
+                </div>
+
+                <div class="form__item">
+                  <label for="job" class="form__title">WDCをどちらでお知りになりましたか？<span class="form__require">*必須</span></label>
+                  <select id="job" name="job" required class="form__select">
+                    <option value="">選択してください</option>
+                    <option value="Google/Yahoo検索">Google/Yahoo検索</option>
+                    <option value="SNS">SNS</option>
+                    <option value="ブログ">ブログ</option>
+                    <option value="友人や知人">友人や知人</option>
+                    <option value="その他">その他</option>
+                  </select>
+                </div>
+
+                <div class="form__btn">
+                  <button type="submit" class="btn">送信する</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /registor -->
+    </main>
+
+    <!-- footer -->
+    <footer id="footer" class="footer"></footer>
+    <!-- /footer -->
+
+    <div class="page-top">
+      <a class="page-top__link"><span class="page-top__icon material-icons-round">
+          keyboard_arrow_up
+        </span>
+      </a>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $("#header").load("component/header.html");
+    $("#mv").load("component/mv.html");
+    $("#about").load("component/about.html");
+    $("#speaker").load("component/speaker.html");
+    $("#session").load("component/session.html");
+
+    $("#footer").load("component/footer.html");
+  </script>
+  <!-- ページスクロール -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>
